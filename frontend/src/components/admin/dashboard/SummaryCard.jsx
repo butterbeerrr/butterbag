@@ -1,4 +1,4 @@
-function SummaryCard({ title, value, icon, description, growth, onClick }) {
+function SummaryCard({ title, value, icon, description, onClick }) {
   return (
     <div
       onClick={onClick}
@@ -17,8 +17,6 @@ function SummaryCard({ title, value, icon, description, growth, onClick }) {
       <h2 className="mt-5 font-serif text-3xl font-semibold text-[#1A1A1A]">
         {value}
       </h2>
-
-      {growth && <p className="mt-2 text-xs text-[#8A7550]">↗ {growth}</p>}
 
       {description && (
         <p className="mt-2 text-xs text-[#6B665F]">{description}</p>
